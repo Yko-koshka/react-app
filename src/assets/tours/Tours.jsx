@@ -1,4 +1,8 @@
 import { useEffect, useState } from 'react'
+import Loading from './Loading'
+import Tour from './Tour'
+
+import './Tour.css'
 
 const url = 'https://www.course-api.com/react-tours-project'
 
@@ -23,9 +27,25 @@ const Tours = () => {
     fetchTours()
   }, [])
 
+  if (isLoading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    )
+  }
+
   return (
     <section className="container">
-      <h2>Tours</h2>
+      <div className="title">
+        <h3>our tours</h3>
+        <div className="title-underline"></div>
+      </div>
+      <div className="tours">
+        {tours.map((tour) => {
+          return <Tour key={tour.id} {...tour} />
+        })}
+      </div>
     </section>
   )
 }
