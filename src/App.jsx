@@ -1,5 +1,6 @@
 import List from './assets/birthday-buddy/List'
 import Tours from './assets/tours/Tours'
+import Reviews from './assets/reviews/Reviews'
 
 const App = () => {
   return (
@@ -7,6 +8,7 @@ const App = () => {
       <section>
         <List />
         <Tours />
+        <Reviews />
       </section>
     </main>
   )
