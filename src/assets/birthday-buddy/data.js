@@ -29,4 +29,4 @@ export default [
     age: 29,
     image: 'https://www.course-api.com/images/people/person-5.jpeg',
   },
-];
+]

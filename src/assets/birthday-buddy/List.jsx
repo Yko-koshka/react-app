@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import Person from './Person'
-import data from '../../data'
+import data from './data'
 
 const List = () => {
   const [people, setPeople] = useState(data)
