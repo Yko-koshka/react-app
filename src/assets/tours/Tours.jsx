@@ -19,7 +19,6 @@ const Tours = () => {
       const response = await fetch(url)
       const tours = await response.json()
       setTours(tours)
-      console.log(tours)
     } catch (error) {
       console.log(error)
     }
